@@ -6,15 +6,34 @@
 </head>
 <body>
 
-  <div class="container">
+  <header class="hero">
+    <h1>Hi, I'm Abdullah 👋</h1>
+    <p>Web Developer | Designer | Freelancer</p>
+  </header>
 
-    <h1 class="fade">Hi, I am Developer 👋</h1>
+  <section class="about">
+    <h2>About Me</h2>
+    <p>I build modern websites using HTML, CSS and JavaScript.</p>
+  </section>
 
-    <p class="slide">I build websites using HTML, CSS & JavaScript 🚀</p>
+  <section class="skills">
+    <h2>Skills</h2>
+    <div class="box">HTML</div>
+    <div class="box">CSS</div>
+    <div class="box">JavaScript</div>
+  </section>
 
-    <button onclick="changeTheme()">Change Theme</button>
+  <section class="contact">
+    <h2>Contact Me</h2>
 
-  </div>
+    <input type="text" id="name" placeholder="Your Name">
+    <input type="email" id="email" placeholder="Your Email">
+    <textarea id="message" placeholder="Your Message"></textarea>
+
+    <button onclick="sendMessage()">Send Message</button>
+
+    <p id="status"></p>
+  </section>
 
   <script src="script.js"></script>
 
