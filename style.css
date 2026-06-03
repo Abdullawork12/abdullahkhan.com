@@ -1,0 +1,38 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  text-align: center;
+  background: #f4f4f4;
+}
+
+.hero {
+  background: black;
+  color: white;
+  padding: 50px;
+}
+
+section {
+  padding: 40px;
+}
+
+.box {
+  display: inline-block;
+  background: white;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+input, textarea {
+  width: 80%;
+  padding: 10px;
+  margin: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
