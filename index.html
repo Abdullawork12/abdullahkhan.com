@@ -1,221 +1,270 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Taxsphere | Accounting, Taxation & Compliance Solutions</title>
+
+<title>Taxsphere | Accounting, Taxation & Compliance</title>
 
 <link rel="stylesheet" href="style.css">
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
 <link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
 </head>
+
 <body>
 
-<header>
-    <nav class="navbar">
-        <div class="logo">
-            <div class="logo-icon">T</div>
-            <div>
-                <h2>Taxsphere</h2>
-                <span>Accounting • Taxation • Compliance</span>
-            </div>
-        </div>
+<div class="bg-blur blur1"></div>
+<div class="bg-blur blur2"></div>
 
-        <ul class="nav-links">
-            <li><a href="#services">Services</a></li>
-            <li><a href="#about">Founder</a></li>
-            <li><a href="#quote">Get Quote</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+<header>
+
+<nav>
+
+<div class="logo">
+
+<svg width="60" height="60" viewBox="0 0 100 100">
+<defs>
+<linearGradient id="grad">
+<stop offset="0%" stop-color="#00d4ff"/>
+<stop offset="100%" stop-color="#5b7fff"/>
+</linearGradient>
+</defs>
+
+<circle cx="50" cy="50" r="42"
+fill="none"
+stroke="url(#grad)"
+stroke-width="6"/>
+
+<text x="50"
+y="60"
+text-anchor="middle"
+fill="#fff"
+font-size="38"
+font-weight="700">T</text>
+</svg>
+
+<div>
+<h2>Taxsphere</h2>
+<span>Accounting • Taxation • Compliance</span>
+</div>
+
+</div>
+
+<ul>
+<li><a href="#services">Services</a></li>
+<li><a href="#about">Founder</a></li>
+<li><a href="#quote">Quote</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
 </header>
 
 <section class="hero">
-    <div class="hero-content">
-        <h1>Your Trusted Partner for Accounting, Taxation & Compliance</h1>
 
-        <p>
-            Professional accounting, GST, Income Tax,
-            ROC Compliance and Business Registration
-            services for Individuals, Startups, LLPs and Companies.
-        </p>
+<div class="hero-content">
 
-        <div class="hero-buttons">
-            <a href="#quote" class="btn-primary">
-                Request Service
-            </a>
+<h1>
+Your Trusted Partner For
+Accounting, Taxation &
+Business Compliance
+</h1>
 
-            <a href="#contact" class="btn-secondary">
-                Contact Us
-            </a>
-        </div>
-    </div>
+<p>
+Helping Individuals, Startups,
+LLPs and Companies stay compliant,
+organized and growth-focused.
+</p>
+
+<div class="hero-buttons">
+
+<a href="#quote" class="primary-btn">
+Request Service
+</a>
+
+<a href="https://wa.me/919326499272"
+class="secondary-btn">
+WhatsApp Now
+</a>
+
+</div>
+
+</div>
+
 </section>
 
 <section class="services" id="services">
 
-    <h2>Our Professional Services</h2>
+<h2>Professional Services</h2>
 
-    <div class="service-grid">
+<div class="grid">
 
-        <div class="card">
-            <i class="fas fa-calculator"></i>
-            <h3>Accounting & Bookkeeping</h3>
-            <p>
-                Complete bookkeeping, finalization,
-                financial statements and accounting support.
-            </p>
-        </div>
+<div class="card">
+<i class="fas fa-calculator"></i>
+<h3>Accounting & Bookkeeping</h3>
+<p>Financial records, bookkeeping and reporting.</p>
+</div>
 
-        <div class="card">
-            <i class="fas fa-file-invoice"></i>
-            <h3>GST Compliance</h3>
-            <p>
-                GSTR filing, LUT filing,
-                E-Way Bill, GST refunds and advisory.
-            </p>
-        </div>
+<div class="card">
+<i class="fas fa-file-invoice"></i>
+<h3>GST Compliance</h3>
+<p>GST filing, LUT, refunds and advisory.</p>
+</div>
 
-        <div class="card">
-            <i class="fas fa-money-check-dollar"></i>
-            <h3>Income Tax & TDS</h3>
-            <p>
-                ITR filing, TDS returns,
-                Form 15CA/CB and tax planning.
-            </p>
-        </div>
+<div class="card">
+<i class="fas fa-money-check"></i>
+<h3>Income Tax & TDS</h3>
+<p>ITR filing, TDS returns and tax planning.</p>
+</div>
 
-        <div class="card">
-            <i class="fas fa-building"></i>
-            <h3>ROC Compliance</h3>
-            <p>
-                LLP filings, ROC annual filings,
-                DIN KYC and company compliance.
-            </p>
-        </div>
+<div class="card">
+<i class="fas fa-building"></i>
+<h3>ROC Compliance</h3>
+<p>Annual filings and corporate compliance.</p>
+</div>
 
-        <div class="card">
-            <i class="fas fa-rocket"></i>
-            <h3>Business Registration</h3>
-            <p>
-                Company, LLP, Startup India,
-                Udyam and PT registrations.
-            </p>
-        </div>
+<div class="card">
+<i class="fas fa-rocket"></i>
+<h3>Business Registration</h3>
+<p>Company, LLP and Startup registrations.</p>
+</div>
 
-        <div class="card">
-            <i class="fas fa-file-signature"></i>
-            <h3>Property & Legal Services</h3>
-            <p>
-                Sale deeds, agreements,
-                property registration and documentation.
-            </p>
-        </div>
+<div class="card">
+<i class="fas fa-file-signature"></i>
+<h3>Property Registration</h3>
+<p>Sale deed and documentation support.</p>
+</div>
 
-    </div>
+</div>
 
 </section>
 
 <section class="about" id="about">
 
-    <h2>Meet The Founder</h2>
+<h2>Founder</h2>
 
-    <div class="about-box">
-        <h3>Abdullah Zafar Khan</h3>
+<div class="glass-box">
 
-        <p>
-            Founder of Taxsphere, dedicated to providing
-            accurate, reliable and timely accounting,
-            taxation and compliance solutions for
-            businesses and individuals.
-        </p>
-    </div>
+<h3>Abdullah Zafar Khan</h3>
+
+<p>
+Founder of Taxsphere with a vision to provide
+professional, technology-driven accounting,
+taxation and compliance solutions.
+</p>
+
+</div>
 
 </section>
 
 <section class="quote" id="quote">
 
-    <h2>Request Service / Get Quote</h2>
+<h2>Request Service / Get Quote</h2>
 
-    <form id="quoteForm">
+<form id="quoteForm">
 
-        <input type="text"
-        placeholder="Your Name" required>
+<input type="text"
+id="name"
+placeholder="Your Name"
+required>
 
-        <input type="email"
-        placeholder="Email Address" required>
+<input type="email"
+id="email"
+placeholder="Email Address"
+required>
 
-        <input type="tel"
-        placeholder="Mobile Number" required>
+<input type="tel"
+id="phone"
+placeholder="Mobile Number"
+required>
 
-        <select required>
-            <option value="">Select Service</option>
-            <option>GST Filing</option>
-            <option>ITR Filing</option>
-            <option>ROC Compliance</option>
-            <option>Business Registration</option>
-            <option>Accounting Services</option>
-            <option>Property Registration</option>
-        </select>
+<select id="service">
 
-        <textarea
-        placeholder="Describe Your Requirement"
-        rows="5"></textarea>
+<option>Select Service</option>
 
-        <button type="submit">
-            Submit Request
-        </button>
+<option>GST Filing</option>
+<option>ITR Filing</option>
+<option>ROC Compliance</option>
+<option>Accounting</option>
+<option>Registration</option>
 
-    </form>
+</select>
+
+<textarea
+id="message"
+placeholder="Your Requirement">
+</textarea>
+
+<button type="submit">
+Submit Request
+</button>
+
+</form>
 
 </section>
 
 <section class="contact" id="contact">
 
-    <h2>Contact Us</h2>
+<h2>Contact Us</h2>
 
-    <div class="contact-details">
+<div class="contact-box">
 
-        <p>
-            <i class="fas fa-location-dot"></i>
-            B-102, 1st Floor, B Wing, Baitunnor Building,
-            CST Road, Kurla West, Kurla Depot,
-            Mumbai – 400070
-        </p>
+<p>
+<i class="fas fa-location-dot"></i>
+B-102, 1st Floor, B Wing,
+Baitunnor Bldg,
+CST Road, Kurla W,
+Mumbai 400070
+</p>
 
-        <p>
-            <i class="fas fa-phone"></i>
-            +91 9326499272
-        </p>
+<p>
+<i class="fas fa-phone"></i>
+9326499272
+</p>
 
-        <p>
-            <i class="fas fa-envelope"></i>
-            abdullakhan.work@gmail.com
-        </p>
+<p>
+<i class="fas fa-envelope"></i>
+abdullakhan.work@gmail.com
+</p>
 
-        <p>
-            <i class="fab fa-instagram"></i>
-            @iknowabdulla
-        </p>
+<p>
+<i class="fab fa-instagram"></i>
+@iknowabdulla
+</p>
 
-        <p>
-            <i class="fab fa-linkedin"></i>
-            linkedin.com/in/theabdullahkhan
-        </p>
+<p>
+<i class="fab fa-linkedin"></i>
+linkedin.com/in/theabdullahkhan
+</p>
 
-    </div>
+</div>
 
 </section>
 
+<a href="https://wa.me/919326499272"
+class="whatsapp">
+<i class="fab fa-whatsapp"></i>
+</a>
+
 <footer>
-    <p>
-        © 2025 Taxsphere. All Rights Reserved.
-    </p>
+
+<p>
+© 2025 Taxsphere.
+All Rights Reserved.
+</p>
+
 </footer>
 
 <script src="script.js"></script>
 
 </body>
 </html>
+```
