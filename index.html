@@ -1,171 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abdullah Khan & Associates</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Taxsphere - Accounting & Taxation Services</title>
+
+<meta name="description" content="Taxsphere provides GST, Income Tax, ROC Compliance, Accounting and Business Registration services in India.">
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
+
 <body>
 
+<!-- NAVBAR -->
 <header>
-    <div class="container">
-        <h2>Abdullah Khan & Associates</h2>
+<div class="container">
 
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
+<h2 class="logo">Taxsphere</h2>
+
+<nav id="nav">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+<div class="menu" onclick="toggleMenu()">☰</div>
+
+</div>
 </header>
 
-<section class="hero" id="home">
-    <div class="hero-content">
-        <h1>Your Trusted Accounting & Taxation Partner</h1>
-        <p>
-            GST, Income Tax, ROC Compliance, Company Registration,
-            Accounting & Bookkeeping Services.
-        </p>
-
-        <a href="#contact" class="btn">Free Consultation</a>
-    </div>
+<!-- HERO -->
+<section class="hero">
+<h1>Simplifying Compliance, Empowering Growth</h1>
+<p>GST • Income Tax • ROC • Accounting • Business Setup</p>
+<a href="contact.html" class="btn">Get Free Consultation</a>
 </section>
 
-<section id="about" class="section">
-    <div class="container">
-        <h2>About Us</h2>
+<!-- COUNTERS -->
+<section class="stats">
 
-        <p>
-            We provide professional Accounting, Taxation,
-            GST Compliance, ROC Compliance, LLP Compliance,
-            Business Registration and Financial Consulting Services
-            for Individuals, Startups, LLPs and Companies.
-        </p>
-    </div>
+<div>
+<h2 class="counter" data-target="500">0</h2>
+<p>Clients</p>
+</div>
+
+<div>
+<h2 class="counter" data-target="1200">0</h2>
+<p>Returns Filed</p>
+</div>
+
+<div>
+<h2 class="counter" data-target="8">0</h2>
+<p>Years Experience</p>
+</div>
+
 </section>
 
-<section id="services" class="section services">
-    <div class="container">
-        <h2>Our Services</h2>
+<!-- SERVICES -->
+<section class="section">
 
-        <div class="service-grid">
+<h2 class="title">Our Services</h2>
 
-            <div class="card">
-                <i class="fas fa-calculator"></i>
-                <h3>Accounting & Bookkeeping</h3>
-                <p>Accounting, Bookkeeping & Finalization of Accounts.</p>
-            </div>
+<div class="cards">
 
-            <div class="card">
-                <i class="fas fa-file-invoice"></i>
-                <h3>GST Compliance</h3>
-                <p>GSTR-1, GSTR-3B, Refund, LUT, E-Way Bill.</p>
-            </div>
+<div class="card"><i class="fas fa-calculator"></i><h3>Accounting</h3></div>
+<div class="card"><i class="fas fa-file-invoice"></i><h3>GST Filing</h3></div>
+<div class="card"><i class="fas fa-landmark"></i><h3>Income Tax</h3></div>
+<div class="card"><i class="fas fa-building"></i><h3>Company Setup</h3></div>
+<div class="card"><i class="fas fa-file-contract"></i><h3>ROC Compliance</h3></div>
+<div class="card"><i class="fas fa-signature"></i><h3>DSC Services</h3></div>
 
-            <div class="card">
-                <i class="fas fa-money-check"></i>
-                <h3>Income Tax</h3>
-                <p>ITR Filing, Tax Planning & Advisory.</p>
-            </div>
+</div>
 
-            <div class="card">
-                <i class="fas fa-building"></i>
-                <h3>Company Registration</h3>
-                <p>Pvt Ltd, LLP, Startup Registration.</p>
-            </div>
-
-            <div class="card">
-                <i class="fas fa-landmark"></i>
-                <h3>ROC Compliance</h3>
-                <p>AOC-4, MGT-7, DPT-3, DIN KYC.</p>
-            </div>
-
-            <div class="card">
-                <i class="fas fa-signature"></i>
-                <h3>DSC Services</h3>
-                <p>Digital Signature Certificate Management.</p>
-            </div>
-
-        </div>
-    </div>
 </section>
 
-<section class="skills section">
-    <div class="container">
-        <h2>Software Expertise</h2>
-
-        <div class="skills-list">
-            <span>Tally Prime</span>
-            <span>Tally Edit Log</span>
-            <span>Xero</span>
-            <span>VT Software</span>
-            <span>MS Excel</span>
-            <span>MS Word</span>
-            <span>MS PowerPoint</span>
-        </div>
-    </div>
-</section>
-
-<section id="contact" class="section contact">
-    <div class="container">
-
-        <h2>Contact Us</h2>
-
-        <div class="contact-box">
-
-            <p>
-                <i class="fas fa-phone"></i>
-                9326499272
-            </p>
-
-            <p>
-                <i class="fas fa-envelope"></i>
-                abdullakhan.work@gmail.com
-            </p>
-
-            <p>
-                <i class="fab fa-instagram"></i>
-                @iknowabdulla
-            </p>
-
-            <p>
-                <i class="fab fa-linkedin"></i>
-                linkedin.com/in/theabdullahkhan
-            </p>
-
-        </div>
-
-        <form id="contactForm">
-
-            <input type="text"
-                placeholder="Your Name" required>
-
-            <input type="email"
-                placeholder="Email Address" required>
-
-            <textarea
-                placeholder="Your Message"
-                required></textarea>
-
-            <button type="submit">Send Message</button>
-
-        </form>
-
-    </div>
-</section>
-
+<!-- FOOTER -->
 <footer>
-    <p>
-        © 2026 Taxsphere.
-        All Rights Reserved.
-    </p>
+<p>© 2026 Taxsphere. All Rights Reserved.</p>
 </footer>
+
+<!-- WHATSAPP -->
+<a class="whatsapp" href="https://wa.me/919326499272">
+<i class="fab fa-whatsapp"></i>
+</a>
 
 <script src="script.js"></script>
 
