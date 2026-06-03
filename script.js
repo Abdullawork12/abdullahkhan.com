@@ -1,23 +1,9 @@
-// MOBILE MENU
-function toggleMenu(){
-document.querySelector("nav ul").classList.toggle("active");
-}
+document.getElementById("quoteForm").addEventListener("submit", function(e){
 
-// COUNTER ANIMATION
-const counters = document.querySelectorAll(".counter");
+e.preventDefault();
 
-counters.forEach(counter=>{
-const update=()=>{
-const target=+counter.getAttribute("data-target");
-const count=+counter.innerText;
-const inc=target/100;
+alert("Thank you for contacting Taxsphere. We will get back to you shortly.");
 
-if(count<target){
-counter.innerText=Math.ceil(count+inc);
-setTimeout(update,20);
-}else{
-counter.innerText=target;
-}
-}
-update();
+this.reset();
+
 });
