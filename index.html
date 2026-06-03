@@ -1,43 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<section class="contact">
+  <h2>Contact Me</h2>
 
-  <header class="hero">
-    <h1>Hi, I'm Abdullah 👋</h1>
-    <p>Web Developer | Designer | Freelancer</p>
-  </header>
+  <input type="text" id="name" placeholder="Your Name">
+  <input type="email" id="email" placeholder="Your Email">
+  <textarea id="message" placeholder="Your Message"></textarea>
 
-  <section class="about">
-    <h2>About Me</h2>
-    <p>I build modern websites using HTML, CSS and JavaScript.</p>
-  </section>
+  <button onclick="sendMessage()">Send Message</button>
 
-  <section class="skills">
-    <h2>Skills</h2>
-    <div class="box">HTML</div>
-    <div class="box">CSS</div>
-    <div class="box">JavaScript</div>
-  </section>
-
-  <section class="contact">
-    <h2>Contact Me</h2>
-
-    <input type="text" id="name" placeholder="Your Name">
-    <input type="email" id="email" placeholder="Your Email">
-    <textarea id="message" placeholder="Your Message"></textarea>
-
-    <button onclick="sendMessage()">Send Message</button>
-
-    <p id="status"></p>
-  </section>
-
-  <script src="script.js"></script>
-
-</body>
-</html>
-<button onclick="sendMessage()">Send Message</button>
+  <p id="status"></p>
+</section>
 
