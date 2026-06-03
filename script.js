@@ -1,11 +1,40 @@
-```javascript
-// EMAIL JS
+// COUNTERS
 
-emailjs.init("YOUR_PUBLIC_KEY");
+const counters = document.querySelectorAll('.counter');
 
-const form = document.getElementById("quoteForm");
+counters.forEach(counter => {
 
-form.addEventListener("submit", function(e){
+const updateCounter = () => {
+
+const target = +counter.getAttribute('data-target');
+
+const count = +counter.innerText;
+
+const increment = target / 100;
+
+if(count < target){
+
+counter.innerText = Math.ceil(count + increment);
+
+setTimeout(updateCounter,20);
+
+}
+else{
+
+counter.innerText = target + "+";
+
+}
+
+};
+
+updateCounter();
+
+});
+
+// EMAILJS
+
+document.getElementById("quoteForm")
+.addEventListener("submit", function(e){
 
 e.preventDefault();
 
@@ -13,60 +42,16 @@ emailjs.send(
 "YOUR_SERVICE_ID",
 "YOUR_TEMPLATE_ID",
 {
-name: document.getElementById("name").value,
-email: document.getElementById("email").value,
-phone: document.getElementById("phone").value,
-service: document.getElementById("service").value,
-message: document.getElementById("message").value
+name:document.getElementById("name").value,
+email:document.getElementById("email").value,
+phone:document.getElementById("phone").value,
+message:document.getElementById("message").value
 }
 )
+.then(function(){
 
-.then(() => {
-
-alert(
-"Thank you! Your request has been submitted successfully."
-);
-
-form.reset();
-
-})
-
-.catch(() => {
-
-alert(
-"Something went wrong. Please try again."
-);
+alert("Quote Request Sent Successfully!");
 
 });
 
 });
-
-// SCROLL ANIMATION
-
-const observer = new IntersectionObserver(entries => {
-
-entries.forEach(entry => {
-
-if(entry.isIntersecting){
-
-entry.target.style.opacity = "1";
-entry.target.style.transform = "translateY(0)";
-
-}
-
-});
-
-});
-
-document
-.querySelectorAll(".card,.glass-box,.contact-box")
-.forEach(el=>{
-
-el.style.opacity="0";
-el.style.transform="translateY(40px)";
-el.style.transition=".8s";
-
-observer.observe(el);
-
-});
-```
