@@ -1,8 +1,30 @@
-function contactUs() {
+function animateValue(id, start, end, duration){
 
-    window.open(
-        "https://wa.me/919999999999",
-        "_blank"
-    );
+  let obj = document.getElementById(id);
 
+  let range = end - start;
+
+  let current = start;
+
+  let increment = end > start ? 1 : -1;
+
+  let stepTime = Math.abs(
+    Math.floor(duration / range)
+  );
+
+  let timer = setInterval(() => {
+
+    current += increment;
+
+    obj.textContent = current;
+
+    if(current === end){
+      clearInterval(timer);
+    }
+
+  }, stepTime);
 }
+
+animateValue("clients",0,5000,2000);
+animateValue("returns",0,12000,2500);
+animateValue("accuracy",0,99,3000);
