@@ -3,236 +3,216 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Taxsphere | Accounting & Taxation Services</title>
+<title>Taxsphere | Accounting, Taxation & Compliance Solutions</title>
 
 <link rel="stylesheet" href="style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
+</head>
 <body>
 
 <header>
-    <div class="container">
+    <nav class="navbar">
         <div class="logo">
-            <h2>Taxsphere</h2>
+            <div class="logo-icon">T</div>
+            <div>
+                <h2>Taxsphere</h2>
+                <span>Accounting • Taxation • Compliance</span>
+            </div>
         </div>
 
-        <nav>
-            <ul>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#software">Software</a></li>
-                <li><a href="#founder">Founder</a></li>
-                <li><a href="#quote">Request Quote</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
+        <ul class="nav-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">Founder</a></li>
+            <li><a href="#quote">Get Quote</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 </header>
-
-<!-- Hero Section -->
 
 <section class="hero">
     <div class="hero-content">
-        <h1>Professional Accounting & Taxation Services</h1>
+        <h1>Your Trusted Partner for Accounting, Taxation & Compliance</h1>
 
         <p>
-            Complete Accounting, GST, Income Tax, ROC Compliance,
-            Business Registration & Documentation Solutions for
-            Individuals, Firms, LLPs and Companies.
+            Professional accounting, GST, Income Tax,
+            ROC Compliance and Business Registration
+            services for Individuals, Startups, LLPs and Companies.
         </p>
 
-        <a href="#quote" class="btn">Request Service / Get Quote</a>
+        <div class="hero-buttons">
+            <a href="#quote" class="btn-primary">
+                Request Service
+            </a>
+
+            <a href="#contact" class="btn-secondary">
+                Contact Us
+            </a>
+        </div>
     </div>
 </section>
 
-<!-- About -->
+<section class="services" id="services">
 
-<section class="about">
-    <div class="container">
-        <h2>About Taxsphere</h2>
-
-        <p>
-            We provide complete professional accounting, taxation,
-            compliance and registration solutions with accuracy,
-            reliability and timely delivery. Our mission is to help
-            businesses stay compliant while focusing on growth.
-        </p>
-    </div>
-</section>
-
-<!-- Services -->
-
-<section id="services" class="services">
-
-    <h2>Our Services</h2>
+    <h2>Our Professional Services</h2>
 
     <div class="service-grid">
 
         <div class="card">
+            <i class="fas fa-calculator"></i>
             <h3>Accounting & Bookkeeping</h3>
-            <ul>
-                <li>Complete Bookkeeping</li>
-                <li>Finalization of Accounts</li>
-                <li>Financial Statements</li>
-                <li>Accounting Maintenance</li>
-            </ul>
+            <p>
+                Complete bookkeeping, finalization,
+                financial statements and accounting support.
+            </p>
         </div>
 
         <div class="card">
+            <i class="fas fa-file-invoice"></i>
             <h3>GST Compliance</h3>
-            <ul>
-                <li>GSTR-1 & GSTR-3B Filing</li>
-                <li>Export & Import GST</li>
-                <li>E-Way Bill Management</li>
-                <li>LUT Filing</li>
-                <li>GST Refund Assistance</li>
-            </ul>
+            <p>
+                GSTR filing, LUT filing,
+                E-Way Bill, GST refunds and advisory.
+            </p>
         </div>
 
         <div class="card">
+            <i class="fas fa-money-check-dollar"></i>
             <h3>Income Tax & TDS</h3>
-            <ul>
-                <li>ITR Filing</li>
-                <li>TDS Returns</li>
-                <li>Lower Deduction Certificate</li>
-                <li>Form 15CA & 15CB</li>
-            </ul>
+            <p>
+                ITR filing, TDS returns,
+                Form 15CA/CB and tax planning.
+            </p>
         </div>
 
         <div class="card">
+            <i class="fas fa-building"></i>
             <h3>ROC Compliance</h3>
-            <ul>
-                <li>LLP Compliance</li>
-                <li>AOC-4</li>
-                <li>MGT-7 / MGT-7A</li>
-                <li>DPT-3</li>
-                <li>DIN KYC</li>
-            </ul>
+            <p>
+                LLP filings, ROC annual filings,
+                DIN KYC and company compliance.
+            </p>
         </div>
 
         <div class="card">
+            <i class="fas fa-rocket"></i>
             <h3>Business Registration</h3>
-            <ul>
-                <li>Company Incorporation</li>
-                <li>LLP Registration</li>
-                <li>Startup India</li>
-                <li>MSME Registration</li>
-                <li>PT Registration</li>
-            </ul>
+            <p>
+                Company, LLP, Startup India,
+                Udyam and PT registrations.
+            </p>
         </div>
 
         <div class="card">
-            <h3>Property Registration</h3>
-            <ul>
-                <li>Sale Deed Drafting</li>
-                <li>Agreement Preparation</li>
-                <li>Stamp Duty Assistance</li>
-                <li>Mutation & Name Transfer</li>
-            </ul>
+            <i class="fas fa-file-signature"></i>
+            <h3>Property & Legal Services</h3>
+            <p>
+                Sale deeds, agreements,
+                property registration and documentation.
+            </p>
         </div>
 
     </div>
-</section>
-
-<!-- Software -->
-
-<section id="software" class="software">
-
-    <h2>Software Expertise</h2>
-
-    <div class="software-grid">
-        <span>Tally Prime</span>
-        <span>Tally Edit Log</span>
-        <span>Xero</span>
-        <span>VT Software</span>
-        <span>Winman</span>
-        <span>MS Excel</span>
-        <span>MS Word</span>
-        <span>MS PowerPoint</span>
-    </div>
 
 </section>
 
-<!-- Founder -->
+<section class="about" id="about">
 
-<section id="founder" class="founder">
+    <h2>Meet The Founder</h2>
 
-    <div class="container">
-
-        <h2>Founder</h2>
-
+    <div class="about-box">
         <h3>Abdullah Zafar Khan</h3>
 
         <p>
-            Dedicated accounting and taxation professional helping
-            businesses manage financial compliance, taxation and
-            corporate regulatory requirements with confidence.
+            Founder of Taxsphere, dedicated to providing
+            accurate, reliable and timely accounting,
+            taxation and compliance solutions for
+            businesses and individuals.
         </p>
-
     </div>
 
 </section>
 
-<!-- Quote Form -->
-
-<section id="quote" class="quote-section">
+<section class="quote" id="quote">
 
     <h2>Request Service / Get Quote</h2>
 
     <form id="quoteForm">
 
-        <input type="text" placeholder="Full Name" required>
+        <input type="text"
+        placeholder="Your Name" required>
 
-        <input type="email" placeholder="Email Address" required>
+        <input type="email"
+        placeholder="Email Address" required>
 
-        <input type="tel" placeholder="Mobile Number" required>
+        <input type="tel"
+        placeholder="Mobile Number" required>
 
         <select required>
             <option value="">Select Service</option>
             <option>GST Filing</option>
-            <option>Income Tax Return</option>
+            <option>ITR Filing</option>
             <option>ROC Compliance</option>
-            <option>Company Registration</option>
+            <option>Business Registration</option>
             <option>Accounting Services</option>
             <option>Property Registration</option>
         </select>
 
-        <textarea rows="5" placeholder="Describe your requirement"></textarea>
+        <textarea
+        placeholder="Describe Your Requirement"
+        rows="5"></textarea>
 
-        <button type="submit">Submit Request</button>
+        <button type="submit">
+            Submit Request
+        </button>
 
     </form>
 
 </section>
 
-<!-- Contact -->
-
-<section id="contact" class="contact">
+<section class="contact" id="contact">
 
     <h2>Contact Us</h2>
 
-    <p><strong>Address:</strong><br>
-    B-102, 1st Floor, B Wing, Baitunnor Bldg,
-    CST Road, Kurla (W), Kurla Depot,
-    Mumbai - 400070</p>
+    <div class="contact-details">
 
-    <p><strong>Phone:</strong> 9326499272</p>
+        <p>
+            <i class="fas fa-location-dot"></i>
+            B-102, 1st Floor, B Wing, Baitunnor Building,
+            CST Road, Kurla West, Kurla Depot,
+            Mumbai – 400070
+        </p>
 
-    <p><strong>Email:</strong> abdullakhan.work@gmail.com</p>
+        <p>
+            <i class="fas fa-phone"></i>
+            +91 9326499272
+        </p>
 
-    <div class="social-links">
+        <p>
+            <i class="fas fa-envelope"></i>
+            abdullakhan.work@gmail.com
+        </p>
 
-        <a href="https://instagram.com/iknowabdulla" target="_blank">Instagram</a>
+        <p>
+            <i class="fab fa-instagram"></i>
+            @iknowabdulla
+        </p>
 
-        <a href="https://www.linkedin.com/in/theabdullahkhan" target="_blank">LinkedIn</a>
+        <p>
+            <i class="fab fa-linkedin"></i>
+            linkedin.com/in/theabdullahkhan
+        </p>
 
     </div>
 
 </section>
 
 <footer>
-    <p>© 2026 Taxsphere. All Rights Reserved.</p>
+    <p>
+        © 2025 Taxsphere. All Rights Reserved.
+    </p>
 </footer>
 
 <script src="script.js"></script>
