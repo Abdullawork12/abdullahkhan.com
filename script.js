@@ -1,56 +1,21 @@
-// COUNTERS
+emailjs.init("YOUR_PUBLIC_KEY");
 
-const counters = document.querySelectorAll('.counter');
-
-counters.forEach(counter => {
-
-const updateCounter = () => {
-
-const target = +counter.getAttribute('data-target');
-
-const count = +counter.innerText;
-
-const increment = target / 100;
-
-if(count < target){
-
-counter.innerText = Math.ceil(count + increment);
-
-setTimeout(updateCounter,20);
-
-}
-else{
-
-counter.innerText = target + "+";
-
-}
-
-};
-
-updateCounter();
-
-});
-
-// EMAILJS
-
-document.getElementById("quoteForm")
+document
+.getElementById("contact-form")
 .addEventListener("submit", function(e){
 
 e.preventDefault();
 
-emailjs.send(
+emailjs.sendForm(
 "YOUR_SERVICE_ID",
 "YOUR_TEMPLATE_ID",
-{
-name:document.getElementById("name").value,
-email:document.getElementById("email").value,
-phone:document.getElementById("phone").value,
-message:document.getElementById("message").value
-}
+this
 )
-.then(function(){
+.then(() => {
 
-alert("Quote Request Sent Successfully!");
+alert("Request Submitted Successfully!");
+
+this.reset();
 
 });
 
