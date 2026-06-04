@@ -4,64 +4,60 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Taxsphere | Accounting, Taxation & Compliance Solutions</title>
+<title>Taxsphere | Accounting, Taxation & Compliance Experts</title>
 
 <link rel="stylesheet" href="style.css">
 
-<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="icon" href="assets/favicon.svg">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
-<script>
-emailjs.init("YOUR_PUBLIC_KEY");
-</script>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 </head>
+
 <body>
 
 <!-- NAVBAR -->
 
 <nav class="navbar">
-    <div class="logo-box">
-
-        <img src="logo.svg" class="logo">
-
-        <span>Taxsphere</span>
-
+    <div class="logo">
+        <img src="assets/logo.svg" alt="Taxsphere">
     </div>
 
-    <ul>
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
         <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
         <li><a href="#founder">Founder</a></li>
-        <li><a href="#quote">Quote</a></li>
-        <li><a href="#booking">Book Call</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
+
+    <a href="#quote" class="quote-btn">
+        Request Quote
+    </a>
 </nav>
 
 <!-- HERO -->
 
-<section class="hero">
+<section class="hero" id="home">
 
     <video autoplay muted loop playsinline>
-        <source src="hero-video.mp4" type="video/mp4">
+        <source src="assets/hero-video.mp4" type="video/mp4">
     </video>
 
     <div class="overlay"></div>
 
     <div class="hero-content">
 
-        <h1>Accounting, Taxation & Compliance Solutions</h1>
+        <h1>One Place. Multiple Solutions.</h1>
 
         <p>
-            Trusted Financial & Regulatory Support for Individuals,
-            Startups, LLPs and Companies.
+            Accounting • GST • Income Tax • Compliance • Registration • Property Documentation
         </p>
 
-        <a href="#quote" class="btn">
+        <a href="#quote" class="hero-btn">
             Request Service
         </a>
 
@@ -69,37 +65,36 @@ emailjs.init("YOUR_PUBLIC_KEY");
 
 </section>
 
-<!-- COUNTERS -->
+<!-- SERVICE CARDS -->
 
-<section class="stats">
+<section class="categories">
 
-    <div class="stat-card">
-        <h2 class="counter" data-target="500">0</h2>
-        <p>Clients Served</p>
-    </div>
-
-    <div class="stat-card">
-        <h2 class="counter" data-target="1000">0</h2>
-        <p>Tax & Compliance Filings</p>
-    </div>
-
-    <div class="stat-card">
-        <h2 class="counter" data-target="100">0</h2>
-        <p>Business Registrations</p>
-    </div>
+<div class="card">Accounting</div>
+<div class="card">GST</div>
+<div class="card">Income Tax</div>
+<div class="card">TDS</div>
+<div class="card">Registration</div>
+<div class="card">ROC</div>
+<div class="card">Payroll</div>
+<div class="card">Audit</div>
+<div class="card">Legal & Property</div>
 
 </section>
 
 <!-- ABOUT -->
 
-<section class="about">
+<section id="about" class="about">
 
-    <h2>Why Taxsphere?</h2>
+<h2>About Taxsphere</h2>
 
-    <p>
-        Accurate, Reliable and Technology Driven Accounting,
-        Taxation and Compliance Services for modern businesses.
-    </p>
+<p>
+From Accounting and Taxation to Business Compliance and Property Documentation,
+we provide reliable professional services designed to save your time, reduce complexity,
+and keep everything on track.
+
+Our goal is simple — accurate work, timely service,
+and complete peace of mind.
+</p>
 
 </section>
 
@@ -107,38 +102,80 @@ emailjs.init("YOUR_PUBLIC_KEY");
 
 <section id="services" class="services">
 
-<h2>Professional Services</h2>
+<h2>Our Services</h2>
 
 <div class="service-grid">
 
-<div class="card">
-<h3>Accounting & Bookkeeping</h3>
-<p>Complete bookkeeping, financial statements and management reporting.</p>
+<div class="service-box">
+<h3>Accounting Services</h3>
+<ul>
+<li>Bookkeeping</li>
+<li>Financial Statement Preparation</li>
+<li>Ledger Maintenance</li>
+<li>Cash Flow Management</li>
+<li>Management Reporting</li>
+<li>Accounts Finalization</li>
+</ul>
 </div>
 
-<div class="card">
-<h3>GST Compliance</h3>
-<p>GST returns, refunds, LUT, E-Way Bills and advisory.</p>
+<div class="service-box">
+<h3>GST Services</h3>
+<ul>
+<li>GST Registration</li>
+<li>GST Return Filing</li>
+<li>GST Amendments</li>
+<li>GST Reconciliation</li>
+<li>GST Audit Support</li>
+<li>LUT Filing</li>
+<li>GST Refund Assistance</li>
+<li>E-Way Bill Support</li>
+</ul>
 </div>
 
-<div class="card">
-<h3>Income Tax & TDS</h3>
-<p>ITR filing, TDS returns, tax planning and Form 15CA/CB.</p>
+<div class="service-box">
+<h3>Income Tax</h3>
+<ul>
+<li>Individual ITR Filing</li>
+<li>Business ITR Filing</li>
+<li>Tax Planning</li>
+<li>Notice Handling</li>
+<li>Capital Gain Computation</li>
+</ul>
 </div>
 
-<div class="card">
-<h3>ROC Compliance</h3>
-<p>Company annual filings, LLP forms and secretarial compliance.</p>
+<div class="service-box">
+<h3>TDS Services</h3>
+<ul>
+<li>TDS Registration</li>
+<li>TDS Return Filing</li>
+<li>TDS Correction</li>
+<li>Form 16 & 16A Assistance</li>
+<li>TDS Compliance Management</li>
+</ul>
 </div>
 
-<div class="card">
+<div class="service-box">
 <h3>Business Registration</h3>
-<p>Company, LLP, Startup India, MSME and PT registrations.</p>
+<ul>
+<li>Proprietorship Registration</li>
+<li>Partnership Registration</li>
+<li>LLP Registration</li>
+<li>Private Limited Registration</li>
+<li>MSME Registration</li>
+<li>Startup Registration</li>
+</ul>
 </div>
 
-<div class="card">
-<h3>Property Registration</h3>
-<p>Sale deeds, agreements and registration assistance.</p>
+<div class="service-box">
+<h3>Legal & Property Services</h3>
+<ul>
+<li>Property Registration</li>
+<li>Sale Deed Preparation</li>
+<li>Gift Deed Documentation</li>
+<li>Rent Agreement Drafting</li>
+<li>Power of Attorney</li>
+<li>Property Due Diligence</li>
+</ul>
 </div>
 
 </div>
@@ -149,47 +186,54 @@ emailjs.init("YOUR_PUBLIC_KEY");
 
 <section id="founder" class="founder">
 
-<h2>Founder</h2>
-
-<div class="founder-box">
-
-<div class="founder-img">
-👨‍💼
-</div>
+<img src="assets/founder.jpg">
 
 <div>
+
+<h2>Founder</h2>
 
 <h3>Abdullah Zafar Khan</h3>
 
 <p>
-Founder of Taxsphere, dedicated to helping businesses
-navigate taxation, accounting and compliance with confidence.
+Founder of Taxsphere, committed to simplifying taxation,
+accounting, compliance and legal services through
+professional expertise and technology-driven solutions.
 </p>
-
-</div>
 
 </div>
 
 </section>
 
-<!-- REQUEST QUOTE -->
+<!-- QUOTE FORM -->
 
 <section id="quote" class="quote">
 
-<h2>Request a Service / Quote</h2>
+<h2>Request Service / Quote</h2>
 
-<form id="quoteForm">
+<form id="contact-form">
 
-<input type="text" id="name" placeholder="Your Name" required>
+<input type="text" name="name" placeholder="Your Name" required>
 
-<input type="email" id="email" placeholder="Email Address" required>
+<input type="email" name="email" placeholder="Email Address" required>
 
-<input type="text" id="phone" placeholder="Phone Number">
+<input type="tel" name="phone" placeholder="Phone Number">
 
-<textarea id="message" placeholder="Service Requirement"></textarea>
+<select name="service">
+
+<option>Select Service</option>
+
+<option>GST</option>
+<option>Income Tax</option>
+<option>Accounting</option>
+<option>Registration</option>
+
+</select>
+
+<textarea name="message"
+placeholder="Requirement"></textarea>
 
 <button type="submit">
-Request Quote
+Submit
 </button>
 
 </form>
@@ -198,17 +242,20 @@ Request Quote
 
 <!-- CALENDLY -->
 
-<section id="booking" class="booking">
+<section class="booking">
 
-<h2>Book a Consultation</h2>
+<h2>Book Consultation</h2>
 
 <div
 class="calendly-inline-widget"
-data-url="https://calendly.com/YOUR-CALENDLY"
+data-url="https://calendly.com/YOUR_USERNAME"
 style="min-width:320px;height:700px;">
 </div>
 
-<script src="https://assets.calendly.com/assets/external/widget.js"></script>
+<script
+src="https://assets.calendly.com/assets/external/widget.js"
+async>
+</script>
 
 </section>
 
@@ -219,22 +266,21 @@ style="min-width:320px;height:700px;">
 <h2>Visit Our Office</h2>
 
 <iframe
-src="https://maps.google.com/maps?q=Kurla%20West%20Mumbai&t=&z=15&ie=UTF8&iwloc=&output=embed"
-allowfullscreen>
+src="https://www.google.com/maps?q=B-102,1st+Floor+Baitunnor+CST+Road+Kurla+West+Mumbai+400070&output=embed"
+loading="lazy">
 </iframe>
 
 </section>
 
 <!-- CONTACT -->
 
-<footer id="contact">
+<section id="contact" class="contact">
 
 <h2>Contact Us</h2>
 
 <p>
 📍 B-102, 1st Floor, B Wing, Baitunnor Bldg,
-CST Road, Kurla W, Kurla Depot,
-Mumbai 400070
+CST Road, Kurla W, Kurla Depot, Mumbai 400070
 </p>
 
 <p>📞 9326499272</p>
@@ -243,21 +289,19 @@ Mumbai 400070
 
 <div class="socials">
 
-<a href="https://instagram.com/iknowabdulla" target="_blank">
-Instagram
+<a href="https://instagram.com/iknowabdulla">
+<i class="fab fa-instagram"></i>
 </a>
 
-<a href="https://www.linkedin.com/in/theabdullahkhan" target="_blank">
-LinkedIn
+<a href="https://www.linkedin.com/in/theabdullahkhan">
+<i class="fab fa-linkedin"></i>
 </a>
 
 </div>
 
-<p class="copyright">
-© 2026 Taxsphere. All Rights Reserved.
-</p>
+</section>
 
-</footer>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
 <script src="script.js"></script>
 
